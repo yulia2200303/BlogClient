@@ -79,7 +79,9 @@
                 </div>
                 <div class="central-column news">
                     <div class="news__photo">
-                        <img src="img/fullNews.png" alt="photo">
+                        <div class="news__photo-wrapper wrapper-photoFull">
+                            <img src="img/fullNews.png" alt="photo" class="photo-size-large">
+                        </div>
                         <div class="caption-article-wrapper">
                             <h2 class="caption-article-news">Roundup: 20 web designs with large backgrounds</h2>
                         </div>
@@ -142,8 +144,23 @@
                 <div class="comment__text-wrapper news__text">
 
                     <h2 class="caption-article">Comments </h2>
+
                     <div class="users-wrapper">
 
+                        <div class="new-comment-wrapper">
+                            <div class="users new-comment">
+                                <a class="fa-stack fa-lg users-icon" href="#">
+                                    <i class="fa fa-user fa-stack-2x"></i>
+                                </a>
+                            </div>
+                            <div class="input-edit-wrapper new-comment-wrp">
+                                <!-- <h3 class="subcaption-article">UserName</h3> -->
+                                <textarea rows="10" cols="45" type="text" class="input-edit new-comment-text"></textarea>
+                                <div class="send-comment-pos">
+                                    <button class="cancel-btn send-comment-btn" type="button">Send Comment</button>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="сomment-list">
                             <li class="comment-parent">
                                 <div class="comment-left">
@@ -292,8 +309,10 @@
         </div>
 
     </footer>
-
-
+    <script src="js/ofi.min.js"></script>
+    <script>
+        objectFitImages('img.photo-size');
+    </script>
 </body>
 
 </html>
